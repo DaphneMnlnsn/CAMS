@@ -1,0 +1,250 @@
+div {
+  font-family: "Poppins";
+}
+.sidebar {
+  position: fixed;
+  height: 90%;
+  width: 7%;
+  background-color: #0070C0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+} 
+.sidebar:hover {
+  width: 15%;
+  align-items: flex-start;
+}
+.sidebar:hover .icon{
+  padding: 14.5px 38px 15px 39px;
+}
+.logo {
+  color: white;
+  font-weight: bold;
+  margin: 20px 0;
+  white-space: nowrap;
+}
+.icon-active{
+  background-color: rgb(0, 59, 101);
+  transition: all 0.3s ease;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+  position: fixed;
+}
+.sidebar:hover .nav{
+  margin-top: 5%;
+}
+.sidebar:hover .logo {
+  padding-left: 30%;
+}
+.icon {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: "Poppins";
+  padding: 15px 34px 15px 34px;
+}
+.icon:hover{
+  transition: all 0.3s ease;
+  background-color: rgba(0, 59, 101, 0.7);
+}
+.nav svg {
+  color: white;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+.blueIcon{
+  color: #006CB7;
+}
+.main-content {
+  padding: 2% 3% 5% 10%;
+}
+.main-content h5{
+  font-weight: bolder;
+}
+.divider {
+  border-top: 1px solid #FAAF19;
+  margin: 10px 0 20px;
+}
+.top-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-wrapper-courses {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding-left: 1%;
+  width: 31%;
+  background: white;
+}
+.search-wrapper-coursesArc {
+position: relative;
+display: inline-flex;
+align-items: center;
+border: 1px solid #ccc;
+border-radius: 6px;
+padding-left: 1%;
+width: 87%;
+background: white;
+}
+.search-icon{
+  color: #888;
+  margin-right: 8px;
+}
+.search-wrapper-courses .search-box, .search-wrapper-coursesArc .search-box {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+.role-filter {
+  padding: 0% 17% 0% 1%;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+.add-course {
+  background: #ffd900;
+  border: none;
+  padding: 6px 20px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.view-archive, .view-courses {
+  background: #006CB7;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icon-btn {
+  cursor: pointer;
+  margin-right: 8px;
+  font-size: 16px;
+}
+.edit-btn {
+  background-color: #0070C0;
+}
+.delete-btn {
+  background-color: #dc3545;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-right-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.admin-role {
+  font-weight: bold;
+  font-size: 14px;
+  color: #0070C0;
+}
+.bell-icon {
+  font-size: 18px;
+  color: #0070C0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.bell-icon:hover {
+  transform: scale(1.1);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.course-card {
+  width: 32%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card-header {
+  height: auto;
+  background-color: #FFF200;
+  width: 100%;
+  padding: 5% 5%;
+}
+.card-body {
+  padding: 1% 4% 5% 4%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  gap: 6px;
+}
+.course-title {
+  font-weight: normal;
+  color: #0070C0;
+  font-size: 12px;
+  margin: 0;
+}
+.course-name {
+  font-size: 14px;
+  color: #0070C0;
+  font-weight: bolder;
+  margin: 0;
+}
+.course-term {
+  font-size: 11px;
+  color: #666;
+  margin: 0;
+}
+.course-description {
+  font-size: 12px;
+  color: #444;
+  margin: 8px 0;
+}
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.card-actions .edit-btn,
+.card-actions .delete-btn {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  width: 50%;
+  padding: 1.5% 5%;
+  color: white;
+}
+.card-actions .edit-btn {
+  background-color: #0070C0;
+}
+.card-actions .delete-btn {
+  background-color: #dc3545;
+}
+.no-records {
+  text-align: center;
+  margin-left: 1%;
+  font-size: 1rem;
+  color: #666;
+}

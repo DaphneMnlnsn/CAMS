@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.9"
+  }
+}

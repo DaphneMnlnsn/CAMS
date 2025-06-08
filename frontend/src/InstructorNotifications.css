@@ -1,0 +1,17 @@
+.status-unread {
+  color: #dc3545;
+  font-weight: bold;
+}
+.status-read {
+  color: #28a745;
+}
+.mark-read {
+  background: #006CB7;
+  border: none;
+  color: white;
+  padding: 3px 20px;
+  font-weight: 600;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}

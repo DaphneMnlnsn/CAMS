@@ -1,0 +1,172 @@
+div {
+    font-family: "Poppins";
+}
+.icon {
+    display: flex;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: "Poppins";
+    padding: 15px 34px 15px 34px;
+}
+.icon:hover{
+    transition: all 0.3s ease;
+    background-color: rgba(0, 59, 101, 0.7);
+}
+.nav svg {
+    color: white;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+.blueIcon{
+    color: #006CB7;
+}
+.content {
+    padding: 2% 3% 5% 3%;
+}
+.content h5{
+    font-weight: bolder;
+}
+.divider {
+    border-top: 1px solid #FAAF19;
+    margin: 10px 0 20px;
+}
+.top-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.search-wrapper-absents {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 1%;
+    width: 54%;
+    background: white;
+}
+.search-wrapper-absents-archive {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding-left: 1%;
+    width: 49%;
+    background: white;
+}
+.search-wrapper-absents-archive .search-box {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+.search-icon{
+    color: #888;
+    margin-right: 8px;
+}
+.search-wrapper-absents .search-box {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 100%;
+}
+.role-filter-absents {
+    padding: 0% 20% 0% 1%;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+}
+.add-section {
+    background: #ffd900;
+    border: none;
+    padding: 6px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.call-student {
+    background: #c40000;
+    border: none;
+    color: white;
+    padding: 3px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.section-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #F4F4F4;
+    border: 1px solid #ccc;
+}
+.section-table th, .section-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.section-table th{
+    border-bottom: 1px solid #FAAF19;
+    font-size: 14px;
+}
+.section-table td{
+    font-size: 12px;
+}
+.status.active {
+    background: #a0e8bd;
+    color: #2e7d32;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.inactive {
+    background: #FF8888;
+    color: #602C2C;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.icon-btn-check {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 18px;
+    color: #36b221;
+}
+.edit-btn {
+    color: #0070C0;
+}
+.delete-btn {
+    color: #dc3545;
+}
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-right-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.admin-role {
+    font-weight: bold;
+    font-size: 14px;
+    color: #0070C0;
+}
+.bell-icon {
+    font-size: 18px;
+    color: #0070C0;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.bell-icon:hover {
+    transform: scale(1.1);
+}

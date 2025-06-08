@@ -1,0 +1,221 @@
+.sidebar {
+  position: fixed;
+  height: 90%;
+  width: 7%;
+  background-color: #0070C0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.sidebar:hover {
+  width: 14%;
+  align-items: flex-start;
+}
+
+.sidebar:hover .icon{
+  padding: 14.5px 38px 15px 39px;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  margin: 20px 0;
+  white-space: nowrap;
+}
+.icon-active{
+  background-color: rgb(0, 59, 101);
+  transition: all 0.3s ease;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+  position: fixed;
+}
+.sidebar:hover .nav{
+  margin-top: 5%;
+}
+
+.sidebar:hover .logo {
+  padding-left: 30%;
+}
+
+.icon {
+  display: flex;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: "Poppins";
+  padding: 15px 34px 15px 34px;
+}
+
+.icon:hover{
+  transition: all 0.3s ease;
+  background-color: rgba(0, 59, 101, 0.7);
+}
+
+.nav svg {
+  color: white;
+  font-size: 20px;
+  transition: transform 0.2s;
+}
+
+.ins-stats-grid {
+  display: grid;
+  grid-template-columns: 30% repeat(2, 1fr);
+  column-gap: 1%;
+}
+.ins-stat-card {
+  background: #ffeb00;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.ins-stat-card.total   { grid-column: 2 / 3; grid-row: 1 / 2; }
+.ins-stat-card.present { grid-column: 3 / 4; grid-row: 1 / 2; }
+.ins-stat-card.absent  { grid-column: 4 / 5; grid-row: 1 / 2; }
+.stat-card.late    { grid-column: 2 / 3; grid-row: 2 / 3; }
+
+.ins-stat-card .ins-stat-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0070C0;
+}
+
+.ins-stat-card .ins-stat-info p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0070C0;
+}
+
+.ins-stat-card .ins-stat-icon {
+  font-size: 30px;
+  color: #0070C0;
+}
+
+.ins-stat-card {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ins-stat-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.ins-stats-grid > * {
+  animation: fadeIn 0.4s ease both;
+}
+
+.bottom-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-auto-rows: 1fr;  
+  gap: 1rem;
+}
+
+.schedule-section,
+.low-attendance{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.schedule-section h2,
+.low-attendance h2{
+  color: #0070C0;
+  margin-top: 1%;
+  font-size: 20px;
+  font-weight: 600;
+}
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  align-items: center;
+}
+.filters label {
+  font-weight: 600;
+  color: #0070C0;
+  position: relative;
+}
+.filters select {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-size: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-left: 0.25rem;
+}
+.filters .chev {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #0070C0;
+}
+.schedule-table thead th,
+.low-attendance thead th {
+  background: #ffeb00;
+  color: #0070C0;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0.75rem;
+  border: none;
+  text-align: left;
+}
+.schedule-section table,
+.low-attendance table {
+  flex: 1;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: auto;
+  display: block;
+}
+.schedule-section table tbody,
+.low-attendance table tbody {
+  display: block;
+  min-height: 8.5rem;
+}
+.schedule-section table td,
+.low-attendance table td{
+  padding: 12px 16px;
+}
+.schedule-section table tr,
+.low-attendance table tr {
+  display: table;
+  width: 100%;
+  font-size: 13px;
+  table-layout: fixed;
+}
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.schedule-header h2 {
+  margin: 0;
+}

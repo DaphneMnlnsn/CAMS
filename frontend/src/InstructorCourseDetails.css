@@ -1,0 +1,234 @@
+.course-detail-wrapper {
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -1%;
+}
+
+.course-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #006bc7;
+  margin-bottom: 0;
+}
+
+.course-header p {
+  font-size: 14px;
+  color: #555;
+}
+
+.button-group button {
+  margin-left: 10px;
+}
+
+.button-group {
+  margin-top: -3%;
+}
+
+.tabs {
+  margin-top: -1%;
+  font-size: 15px;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #006bc7;
+}
+
+.tab.active {
+  background-color: #ffeb3b;
+  border-radius: 5px 5px 0 0;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1%;
+  background: #F4F4F4;
+  border: 1px solid #ccc;
+  max-height: 55vh;
+  min-height: 55vh;
+}
+
+.attendance-table th,
+.attendance-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.attendance-table td {
+  font-size: 12px;
+}
+
+.attendance-table th {
+  border-bottom: 1px solid #FAAF19;
+  font-size: 14px;
+}
+
+.attendance-table tbody{
+  vertical-align: top;
+}
+
+.attendance-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1%;
+  background: #F4F4F4;
+  border: 1px solid #ccc;
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+.attendance-grid th,
+.attendance-grid td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  min-width: 1%;
+}
+.attendance-grid th:first-child,
+.attendance-grid td:first-child {
+  width: 10%;
+}
+.attendance-grid th:nth-child(2),
+.attendance-grid td:nth-child(2) {
+  width: 40%;
+}
+
+.attendance-grid th:first-child,
+.attendance-grid td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 3;
+}
+
+.attendance-grid th:nth-child(2),
+.attendance-grid td:nth-child(2) {
+  position: sticky;
+  left: 80px;
+  z-index: 3;
+}
+.attendance-grid th {
+  border-bottom: 1px solid #FAAF19;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.attendance-grid-wrapper {
+  margin-top: 1%;
+}
+.attendance-grid-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.attendance-grid td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+h4{
+  margin-top: 5%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #006bc7;
+}
+.add-student {
+  background-color: #ffd900;
+  color: black;
+  padding: 6px 20px;
+  margin-top: 4.5%;
+  font-weight: bold;
+  max-height: min-content;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-student:hover {
+  background-color: #ceaf00;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #F4F4F4;
+  border: 1px solid #ccc;
+}
+.students-table th, .students-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+.students-table th{
+  border-bottom: 1px solid #FAAF19;
+  font-size: 14px;
+}
+.students-table td{
+  font-size: 12px;
+}
+.trash-cell{
+  color: #dc3545;
+  text-align: center;
+  width: 8%;
+}
+.trash-cell {
+  text-align: center;
+  width: 8%;
+}
+.trash-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #dc3545;
+  font-size: 16px;
+  padding: 4px;
+  transition: color 0.2s ease;
+}
+
+.trash-button:hover {
+  color: #a71d2a;
+}
+.students-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+.status-icon {
+  font-size: 20px;
+}
+
+.status-icon.present {
+  color: green;
+}
+
+.status-icon.late {
+  color: orange;
+}
+
+.status-icon.absent {
+  color: red;
+}
